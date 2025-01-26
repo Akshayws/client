@@ -1,0 +1,265 @@
+/* src/styles/index.css */
+
+/* Import other component-specific styles */
+@import './input.css';  /* Input field styles */
+@import './card.css';   /* Card component styles */
+@import './header.css'; /* Header component styles */
+@import './global.css'; /* General global styles */
+
+/* Global reset and general styles for the project */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base font and line height */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Utility classes */
+.container {
+  width: 90%;
+  max-width: 1200px;  /* Max width for large screens */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Flexbox utility */
+.flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flex with column direction */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utility for aligning text to center */
+.text-center {
+  text-align: center;
+}
+
+/* Utility for making text bold */
+.font-bold {
+  font-weight: bold;
+}
+
+/* Utility for making text italic */
+.font-italic {
+  font-style: italic;
+}
+
+/* Margin utilities */
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+/* Padding utilities */
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+/* Width utilities */
+.w-full {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+/* Background color utilities */
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.bg-primary {
+  background-color: #007bff;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* Border utilities */
+.border {
+  border: 1px solid #ddd;
+}
+
+.border-radius {
+  border-radius: 5px;
+}
+
+/* Text color utilities */
+.text-primary {
+  color: #007bff;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Utility for displaying inline-block elements */
+.inline-block {
+  display: inline-block;
+}
+
+/* Shadow utilities */
+.shadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-lg {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive grid layout */
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Custom utilities for hover effects */
+.hover-bg-primary:hover {
+  background-color: #007bff;
+}
+
+.hover-bg-secondary:hover {
+  background-color: #6c757d;
+}
+
+.hover-text-white:hover {
+  color: white;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile-first design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  /* Stack grid layout */
+  .grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Smaller font size for mobile */
+  body {
+    font-size: 14px;
+  }
+
+  /* Button size and text alignment on small screens */
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Tablet or medium devices (e.g., iPad) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 85%;
+    padding: 1.5rem;
+  }
+}
+
+/* Large screens (e.g., Desktop) */
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  /* Larger font size for desktop */
+  body {
+    font-size: 16px;
+  }
+}
+
+

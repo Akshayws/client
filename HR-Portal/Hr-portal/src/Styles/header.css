@@ -1,0 +1,87 @@
+/* src/styles/header.css */
+
+/* Basic styling for the header */
+.header-custom {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Header title styling */
+  .header-custom h1 {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+  
+  /* Navigation styling inside the header */
+  .header-custom nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  /* Navigation link styling */
+  .header-custom nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .header-custom nav a:hover {
+    text-decoration: underline;
+  }
+  /* header.css */
+
+/* Basic styling for the header */
+.header-custom {
+    background-color: #007bff; /* Bootstrap's primary blue */
+    padding: 1rem 2rem;        /* Padding around the header */
+    color: white;              /* White text color */
+  }
+  
+  /* Flex layout for the navigation bar */
+  .header-custom nav {
+    display: flex;
+    justify-content: space-between; /* Space between the logo and the nav links */
+    align-items: center;            /* Center the items vertically */
+  }
+  
+  /* Styling for the HR Portal text */
+  .header-custom .font-bold {
+    font-weight: bold;
+    font-size: 1.5rem;             /* Font size for the logo */
+  }
+  
+  /* Styling for the navigation links */
+  .header-custom a {
+    color: white;                 /* Default white color for links */
+    text-decoration: none;        /* Remove underline from links */
+    font-size: 1rem;              /* Font size for links */
+  }
+  
+  /* Hover effects for navigation links */
+  .header-custom a:hover {
+    text-decoration: underline;   /* Underline on hover */
+    color: #f8f9fa;               /* Slightly lighter color on hover */
+  }
+  
+  /* Add margin space between the links */
+  .header-custom .space-x-4 {
+    display: flex;
+    gap: 1rem;  /* Space between links */
+  }
+  
+  /* Optional: Media query for responsiveness */
+  @media (max-width: 768px) {
+    .header-custom nav {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align to the left */
+    }
+  
+    .header-custom .space-x-4 {
+      gap: 0.5rem; /* Less space between links in smaller screens */
+    }
+  }
+  

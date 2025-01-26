@@ -1,0 +1,203 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+/* HR Dashboard Wrapper */
+.hr-dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50; /* Dark blue */
+    color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+    max-width: 80%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background-color: #1f2a35;
+    color: #1abc9c;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.sidebar-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #95a5a6;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px 40px;
+    background-color: #f5f6fa;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.top-nav .search-bar {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav .search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.top-nav .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.top-nav .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.top-nav .buttons button:hover {
+    background-color: #16a085;
+}
+
+/* Dashboard Content */
+.dashboard-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Candidate Section */
+.candidate-section {
+    margin-top: 20px;
+}
+
+.candidate-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.candidate-section .section-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.candidate-section .filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.candidate-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.candidate-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.candidate-card .name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.candidate-card .score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1abc9c;
+}

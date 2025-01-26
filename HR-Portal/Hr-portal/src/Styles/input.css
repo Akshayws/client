@@ -1,0 +1,32 @@
+/* input.css */
+
+/* Custom input styles */
+.input-custom {
+    padding: 10px;              /* Padding inside the input field */
+    border: 1px solid #ccc;    /* Light border for the input */
+    border-radius: 4px;        /* Rounded corners */
+    width: 100%;                /* Make input field take up full width */
+    font-size: 16px;            /* Text size */
+    transition: border-color 0.2s ease-in-out; /* Smooth transition for border color on focus */
+  }
+  
+  /* On focus, change border color to blue */
+  .input-custom:focus {
+    border-color: #007bff;      /* Bootstrap's primary color */
+    outline: none;              /* Remove the default outline */
+  }
+  
+  /* Optional: Add some extra margin between input fields */
+  .input-custom + .input-custom {
+    margin-top: 10px;
+  }
+  
+  /* Optional: Add error style for invalid inputs (if needed) */
+  .input-custom.is-invalid {
+    border-color: #dc3545; /* Bootstrap's danger color */
+  }
+  
+  .input-custom.is-valid {
+    border-color: #28a745; /* Bootstrap's success color */
+  }
+  
